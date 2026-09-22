@@ -1,0 +1,25 @@
+{
+  "name": "Canal 7 — Tournage",
+  "short_name": "Canal 7",
+  "description": "Repérages, décors D2, ponctuels, équipe et camions pour le tournage (chef·fe électricien·ne).",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0ede8",
+  "theme_color": "#111111",
+  "orientation": "any",
+  "icons": [
+    { "src": "./icon192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icon512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "share_target": {
+    "action": "./index.html?share-target=1",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files": [ { "name": "contact", "accept": ["text/vcard", "text/x-vcard", "text/directory", ".vcf"] } ]
+    }
+  }
+}
